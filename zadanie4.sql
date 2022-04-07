@@ -33,22 +33,22 @@ VALUES
 (
 	1,
 	'Karol',
-	'Górski',
-	'Bielsko-Bia³a ul.Kasztanowa 31 12-405',
+	'Géski',
+	'Bielsko-Biaè±‰ ul.Kasztanowa 31 12-405',
 	'176949960'
 )
 ,(
 	2,
 	'Allan',
 	'Duda',
-	'Kielce ul.S³owiañska 88 79-507',
+	'Kielce ul.Sé€™wiaé›Ÿka 88 79-507',
 	'512432132'
 )
 ,(
 	3,
 	'Alojzy',
 	'Kwiatkowski',
-	'Zielona Góra ul.Kiliñskiego 26 50-087',
+	'Zielona Géa ul.Kilié›Ÿkiego 26 50-087',
 	'933823110'
 )
 ,(
@@ -62,33 +62,33 @@ VALUES
 	5,
 	'Kacper',
 	'Rutkowski',
-	'Piotrków Trybunalski ul.Akacjowa 97 77-645',
+	'Piotrké—š Trybunalski ul.Akacjowa 97 77-645',
 	'452897123'
 )
 ,(
 	6,
 	'Olaf',
-	'B³aszczyk',
-	'Suwa³ki ul.Us³ugowa 47 19-582',
+	'Bè±‰szczyk',
+	'Suwaè¶¾i ul.Usé€gowa 47 19-582',
 	'671381074'
 )
 ,(
 	7,
 	'Karol',
 	'Sawicki',
-	'S³upsk ul.£¹kowa 20 61-974',
+	'Sé€psk ul.ã„¨kowa 20 61-974',
 	'679676523'
 )
 ,(
 	8,
 	'Leszek',
 	'Nowak',
-	'Che³m ul.Piesza 32 68-725',
+	'Cheè»› ul.Piesza 32 68-725',
 	'648614114'
 )
 ,(
 	9,
-	'£ukasz',
+	'ã„†kasz',
 	'Maj',
 	'Tarnobrzeg ul.Bielska 35 42-875',
 	'269181454'
@@ -97,7 +97,7 @@ VALUES
 	10,
 	'Marcin',
 	'Jankowski',
-	'Wroc³am ul.Ko³¹taja 30 32-676',
+	'Wrocè±‰m ul.Koç« taja 30 32-676',
 	'967454540'
 )
 
@@ -205,13 +205,13 @@ VALUES
 )
 ,(
 	5,
-	'Sta¿ysta',
+	'Staç¯¡sta',
 	2850,
 	5
 )
 ,(
 	6,
-	'Sta¿ysta',
+	'Staç¯¡sta',
 	2700,
 	6
 )
@@ -229,7 +229,7 @@ VALUES
 )
 ,(
 	9,
-	'Sta¿ysta',
+	'Staç¯¡sta',
 	3000,
 	9
 )
