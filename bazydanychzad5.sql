@@ -73,22 +73,22 @@ VALUES
 (
 	1,
 	'Karol',
-	'Górski',
-	'Bielsko-Bia³a ul.Kasztanowa 31 12-405',
+	'GÃ³rski',
+	'Bielsko-BiaÅ‚a ul.Kasztanowa 31 12-405',
 	'176949960'
 )
 ,(
 	2,
 	'Allan',
 	'Duda',
-	'Kielce ul.S³owiañska 88 79-507',
+	'Kielce ul.SÅ‚owiaÅ„ska 88 79-507',
 	'512432132'
 )
 ,(
 	3,
 	'Alojzy',
 	'Kwiatkowski',
-	'Zielona Góra ul.Kiliñskiego 26 50-087',
+	'Zielona GÃ³ra ul.KiliÅ„skiego 26 50-087',
 	'933823110'
 )
 ,(
@@ -102,33 +102,33 @@ VALUES
 	5,
 	'Kacper',
 	'Rutkowski',
-	'Piotrków Trybunalski ul.Akacjowa 97 77-645',
+	'PiotrkÃ³w Trybunalski ul.Akacjowa 97 77-645',
 	'452897123'
 )
 ,(
 	6,
 	'Olaf',
-	'B³aszczyk',
-	'Suwa³ki ul.Us³ugowa 47 19-582',
+	'BÅ‚aszczyk',
+	'SuwaÅ‚ki ul.UsÅ‚ugowa 47 19-582',
 	'671381074'
 )
 ,(
 	7,
 	'Karol',
 	'Sawicki',
-	'S³upsk ul.£¹kowa 20 61-974',
+	'SÅ‚upsk ul.ÅÄ…kowa 20 61-974',
 	'679676523'
 )
 ,(
 	8,
 	'Leszek',
 	'Nowak',
-	'Che³m ul.Piesza 32 68-725',
+	'CheÅ‚m ul.Piesza 32 68-725',
 	'648614114'
 )
 ,(
 	9,
-	'£ukasz',
+	'Åukasz',
 	'Maj',
 	'Tarnobrzeg ul.Bielska 35 42-875',
 	'269181454'
@@ -137,7 +137,7 @@ VALUES
 	10,
 	'Marcin',
 	'Jankowski',
-	'Wroc³am ul.Ko³¹taja 30 32-676',
+	'WrocÅ‚am ul.KoÅ‚Ä…taja 30 32-676',
 	'967454540'
 )
 
@@ -252,12 +252,12 @@ VALUES
 )
 ,(
 	5,
-	'Sta¿ysta',
+	'StaÅ¼ysta',
 	2850
 )
 ,(
 	6,
-	'Sta¿ysta',
+	'StaÅ¼ysta',
 	2700
 )
 ,(
@@ -272,7 +272,7 @@ VALUES
 )
 ,(
 	9,
-	'Sta¿ysta',
+	'StaÅ¼ysta',
 	3000
 )
 ,(
@@ -468,19 +468,19 @@ JOIN ksiegowosc.pensja ON pensja.id_pensji = wynagrodzenie.id_wynagrodzenia
 JOIN ksiegowosc.premia ON premia.id_premii = wynagrodzenie.id_premii
 WHERE premia.kwota IS NULL AND pensja.kwota > 2000;
 
--- 6d. wyswietl pracownikow, ktorych pierwsza litera imienia zaczyna siê na litere J
+-- 6d. wyswietl pracownikow, ktorych pierwsza litera imienia zaczyna siÄ™ na litere J
 
 SELECT pracownicy.imie, pracownicy.nazwisko 
 FROM ksiegowosc.pracownicy 
 WHERE pracownicy.imie LIKE 'J%';
 
--- 6e. wyswietl pracownikow, ktorych naziwko zawiera litere 'n' oraz imie konczy siê na litere 'a'
+-- 6e. wyswietl pracownikow, ktorych naziwko zawiera litere 'n' oraz imie konczy siÄ™ na litere 'a'
 
 SELECT pracownicy.imie, pracownicy.nazwisko 
 FROM ksiegowosc.pracownicy 
 WHERE pracownicy.nazwisko LIKE '%n%' AND pracownicy.imie LIKE '%a';
 
--- 6f. wyswietl imie i nazwisko pracownikow oraz liczbe ich nadgodzin przyjmuj¹c i¿ standardowy czas pracy to 160h miesiecznie
+-- 6f. wyswietl imie i nazwisko pracownikow oraz liczbe ich nadgodzin przyjmujÄ…c iÅ¼ standardowy czas pracy to 160h miesiecznie
 
 SELECT pracownicy.imie, pracownicy.nazwisko, godziny.liczba_godzin, liczba_godzin - 160 AS Nadgodziny
 FROM ksiegowosc.pracownicy 
@@ -495,7 +495,7 @@ JOIN ksiegowosc.wynagrodzenie ON wynagrodzenie.id_pracownika = pracownicy.id_pra
 JOIN ksiegowosc.pensja ON pensja.id_pensji = wynagrodzenie.id_pensji
 WHERE pensja.kwota > 1500 AND pensja.kwota < 3000;
 
--- 6h. wyœwietl imiê i nazwisko pracowników, którzy pracowali w nadgodzinach i nie otrzymali premii
+-- 6h. wyÅ›wietl imiÄ™ i nazwisko pracownikÃ³w, ktÃ³rzy pracowali w nadgodzinach i nie otrzymali premii
 
 SELECT pracownicy.imie, pracownicy.nazwisko
 FROM ksiegowosc.pracownicy
@@ -596,7 +596,7 @@ INSERT INTO ksiegowosc.pensja
 VALUES
 (
 	11,
-	'WoŸny',
+	'WoÅºny',
 	2500)
 INSERT INTO ksiegowosc.premia
 (
@@ -638,4 +638,3 @@ FROM ksiegowosc.pracownicy
 JOIN ksiegowosc.wynagrodzenie ON wynagrodzenie.id_pracownika = pracownicy.id_pracownika
 JOIN ksiegowosc.pensja ON pensja.id_pensji = wynagrodzenie.id_pensji
 
-DROP TABLE ksiegowosc.premia
